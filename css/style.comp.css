@@ -3,6 +3,9 @@ html {
   margin: 0;
   padding: 0;
   font-size: 62.5%; }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 46.8%; } }
 
 ::selection {
   background-color: #faf5b2; }
@@ -19,10 +22,10 @@ body {
     .pictures {
       bottom: 17%;
       right: 55%; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 450px) {
     .pictures {
-      bottom: 3%;
-      right: 88%; } }
+      bottom: 5%;
+      right: 75%; } }
 
 .polaroid {
   width: 18rem;
@@ -113,7 +116,7 @@ body {
   background-image: url("../images/scribble.svg");
   display: inline-block;
   background-repeat: repeat;
-  background-position: right 0px bottom 22px;
+  background-position: right 0px bottom 2.2rem;
   cursor: url("../images/eraser3.png"), auto; }
 
 .popup {
