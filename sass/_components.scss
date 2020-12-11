@@ -1,0 +1,196 @@
+.polaroid{
+    width: 18rem;
+    height: 22.1rem;
+    background-color: white;
+    padding-top: 1rem;
+    transition: all 0.5s;
+    box-shadow: 3px 8px 8px 1px rgba(0,0,0,0.23);
+
+    &__img{
+        width: 16rem;
+        height: 16rem;
+        background-image: url("../images/cartman.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+    }
+
+    &--p1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(-30deg);
+
+        &:hover{
+            z-index: 20;
+            transform: scale(1.1);
+        }
+    }
+
+    &--p2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(10deg) translateX(40%);
+        z-index: 10;
+
+        &:hover{
+            z-index: 20;
+            transform: scale(1.1) translateX(40%);
+        }
+    }
+
+    &--p3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(-10deg) translate(70%, 10%);
+
+        &:hover{
+            z-index: 20;
+            transform: scale(1.1) translate(70%, 0%);
+        }
+    }
+}
+
+.paper {
+    min-width: 49rem;
+    max-width: 60rem;
+    height: max-content;
+    position: relative;
+    margin: 2rem auto 5rem auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: rgb(250, 245, 178);
+    box-shadow: 0px 0px 5px 0px #888;
+
+    &::before {
+        content: '';
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 4rem;
+        background-color: rgba(255,0,0,0.6);
+      }
+
+    &__pattern {
+        height: 100%;
+        background-image: repeating-linear-gradient(rgb(250, 245, 178) 0px, rgb(250, 245, 178) 2.4rem, teal 2.5rem);
+      } 
+
+    &__content {
+        padding-top: 0.4rem;
+        padding-left: 5.6rem;
+        padding-right: 1.6rem;
+        padding-bottom: 3rem;
+        line-height: 2.5rem;
+        font-family: 'Special Elite', cursive;
+        font-size: 1.9rem;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+      }
+
+      &__text{
+          margin-block-start: 2.5rem;
+          scroll-margin-block-end: 2.5em;
+      }
+
+      &__close{
+          &:link,
+          &:visited{
+              color: #000;
+            text-decoration: none;  
+            font-size: 2.5rem;
+            position: absolute;
+            top: 3%;
+            left: 91%;
+            transition: transform 0.2s;
+
+            &:hover{
+                transform: translateY(-0.5rem);
+            }
+          }
+      }
+  }
+
+.scribble{
+    background-image: url("../images/scribble.svg");
+    display: inline-block;
+    background-repeat: repeat;
+    background-position: right 0px bottom 22px;
+
+    cursor: url("../images/eraser3.png"),auto;
+}
+
+.popup{
+    width: 100%; 
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    opacity: 1;
+    visibility: visible;
+    // overflow-y:scroll;
+    overflow-y: auto; 
+
+    background-color: rgba(0,0,0, 0.8);
+
+    
+    transition: all 0.3s;
+}
+
+.btn{
+    &,
+    &:link,
+    &:visited{
+        text-decoration: none;
+        color: #FFF;
+        background-color: rgb(26, 153, 68);
+        padding: 2rem 3rem;
+        border-radius: 1rem;
+        display: inline-block;
+        font-size: 2rem;
+
+        transition: all .2s;
+
+        &:hover{
+            transform: translateY(-0.3rem);
+            box-shadow: 0 1rem 2rem rgba(0,0,0, 0.2);
+        }
+
+        &:active,
+        &:focus{
+            outline: none;
+            transform: translateY(-0.1rem);
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.2);
+        }
+    }
+}
+
+// .scroll{
+//       /* other stuff we already covered */
+
+//   /* cover the modal */
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: max-content;
+
+
+
+//   /* let it scroll */
+//   overflow: auto;
+// }
+
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+  
