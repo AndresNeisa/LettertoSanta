@@ -21,8 +21,8 @@ body {
       right: 55%; } }
   @media only screen and (max-width: 600px) {
     .pictures {
-      bottom: 5%;
-      right: 80%; } }
+      bottom: 3%;
+      right: 88%; } }
 
 .polaroid {
   width: 18rem;
@@ -66,8 +66,7 @@ body {
       transform: scale(1.1) translate(70%, 0%); }
 
 .paper {
-  min-width: 49rem;
-  max-width: 60rem;
+  max-width: 70rem;
   height: max-content;
   position: relative;
   margin: 2rem auto 5rem auto;

@@ -55,15 +55,15 @@
 }
 
 .paper {
-    min-width: 49rem;
-    max-width: 60rem;
+    // min-width: 32rem;
+    max-width: 70rem;
     height: max-content;
     position: relative;
     margin: 2rem auto 5rem auto;
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: rgb(250, 245, 178);
-    box-shadow: 0px 0px 5px 0px #888;
+    box-shadow: 0px 0px 5px 0px #888; 
 
     &::before {
         content: '';
